@@ -84,6 +84,11 @@ Screenshots from Hyperdrive run:
 ![hyper_run-details](https://user-images.githubusercontent.com/48255327/163007188-11f82bbd-fa16-4727-8962-8fdb73c32baf.png)
 ![hyperdrive_3d](https://user-images.githubusercontent.com/48255327/163007192-3b2411e9-865d-45e1-b4fa-28b56cb08920.png)
 
+##
+Screenshot of the best model with its run id:
+![hyper_run-id](https://user-images.githubusercontent.com/48255327/163024491-0b4138dc-185f-4110-96d1-933991c8b9e2.png)
+
+
 ## Model Deployment
 After both best models have been registered, the better model being the AutoML model was selected to be deployed. This is done with the help of the ACI
 (Azure Container Instance). A request is then be made to the endpoint. After the endpoint is deleted.
