@@ -1,12 +1,9 @@
 # Detecting Parkinson’s Disease
 
-Parkinson's disease is a long-term degenerative disorder of the central nervous system that mainly affects the motor system. It’s effects on the central nervous
-system are both chronic (meaning they persist) and progressive (meaning the symptoms grow worse over time), so a model is created to detect the prescence of the disease for individuals to seek treatment from physicians.
+Parkinson's disease is a long-term degenerative disorder of the central nervous system that mainly affects the motor system. Its effects on the central nervous system are both chronic (meaning they persist) and progressive (meaning the symptoms grow worse over time), so a model is created to detect the presence of the disease for individuals to seek treatment from physicians.
 
-## Project Set Up and Installation
-Microsoft's Azure ML is used to solve the underlying problem.
-In this experiment, models were built using the python libraries, scikit-learn, numpy, pandas, and xgboost, with environment details included in the [myenv.yml](https://github.com/KwabenaNyinaku/nd00333-capstone/blob/master/starter_file/myenv.yml) file. 
-
+## Project Set-Up and Installation
+Microsoft's Azure ML is used to solve the underlying problem. In this experiment, models were built using the python libraries, sci-kit-learn, NumPy, pandas, and xgboost, with environment details included in the myenv.yml file.
 ## 
 ![workflow](https://user-images.githubusercontent.com/48255327/162997271-9cf8c840-0e99-4380-bbf1-8bf88fd03477.png)
 
@@ -15,15 +12,15 @@ In this experiment, models were built using the python libraries, scikit-learn, 
 ### Overview
 This dataset is composed of a range of biomedical voice measurements from 
 31 people, 23 with Parkinson's disease (PD). Each column in the table is a 
-particular voice measure, and each row corresponds one of 195 voice 
-recording from these individuals ("name" column). The main aim of the data 
+particular voice measure, and each row corresponds to one of 195 voice 
+recordings from these individuals ("name" column). The main aim of the data 
 is to discriminate healthy people from those with PD, according to "status" 
 column which is set to 0 for healthy and 1 for PD.
 
 The data is in ASCII CSV format. The rows of the CSV file contain an 
 instance corresponding to one voice recording. There are around six 
 recordings per patient, the name of the patient is identified in the first 
-column.For further information or to pass on comments, please contact Max 
+column. For further information or to pass on comments, please contact Max 
 Little (littlem '@' robots.ox.ac.uk).
 
 Further details are contained in the following reference -- if you use this 
@@ -40,7 +37,7 @@ Little MA, McSharry PE, Roberts SJ, Costello DAE, Moroz IM.
 BioMedical Engineering OnLine 2007, 6:23 (26 June 2007)
 
 ### Task
-The project involves creating a model to predict the prescence of Parkinson's Disease in an individual. The 'status' column is set as a target column and 
+The project involves creating a model to predict the presence of Parkinson's Disease in an individual. The 'status' column is set as a target column and 
 other parameters are set to create a model to solve the problem.
 
 ### Access
@@ -50,10 +47,10 @@ The data is uploaded to the workspace for AutoML and accessed from this [url](ht
 
 
 ## Automated ML
-An AutoML run was initaited with early stopping enabled, timeout minutes of fifteen, the primary metric of accuracy and featurization set to auto. The parkinson's dataset was then selected with the label column 'status' chosen, and lastly the task set to classification.
+An AutoML run was initiated with early stopping enabled, timeout minutes of fifteen, the primary metric of accuracy and featurization set to auto. The Parkinson's dataset was then selected with the label column 'status' chosen, and lastly, the task was set to classification.
 
 ### Results
-After the experiment time had elapsed, a Voting Ensemble model registered the best accuracy of 95.4%. The column 'PPE' topped as a most important feature,
+After the experiment time had elapsed, a Voting Ensemble model registered the best accuracy of 95.4%. The column 'PPE' topped as the most important feature,
 with 'spread1' and 'spread2' being the second and third respectively.
 
 ##
@@ -72,11 +69,11 @@ Screeshot of Confusion Matrix:
 ## Hyperparameter Tuning
 Logistic Regression was chosen because it is easier to implement, interpret, and very efficient to train on such a dataset. A random parameter search is then 
 selected to reduce the time for computation. The run finished in approximately 8 minutes. The hyperparameters 'C' and 'max_iterations' were randomly 
-sampled from '0.3, 0.6, 0.9, 1.2' and '40, 90, 140, 190, 240' choices respectively
+sampled from '0.3, 0.6, 0.9, 1.2' and '40, 90, 140, 190, 240' choices respectively.
 
 ### Results
-The best model was registered with an accuracy of 89.1% from hyperparameters, regularization Strength of choice 0.3 and max iterations of 40. 
-An improvement can be made from sampling randomly through a uniform distribution of a specific range. 
+The best model was registered with an accuracy of 89.1% from hyperparameters, regularization Strength of choice of 0.3 and max iterations of 40. 
+An improvement can be made by sampling randomly through the uniform distribution of a specific range. 
 
 ##
 Screenshots from Hyperdrive run:
@@ -90,8 +87,8 @@ Screenshot of the best model with its run id:
 
 
 ## Model Deployment
-After both best models have been registered, the better model being the AutoML model was selected to be deployed. This is done with the help of the ACI
-(Azure Container Instance). A request is then be made to the endpoint. After the endpoint is deleted.
+The AutoMl model is selected for deployment after comparisons show it proved the better. The deployment is carried out with the help of the ACI
+(Azure Container Instance). A request is then made to the endpoint, after the endpoint is deleted.
 
 ##
 Screenshots of model deployment and Testing Endpoint:
