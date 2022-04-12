@@ -92,4 +92,4 @@ Screenshots of model deployment and Testing Endpoint:
 ![service-delete](https://user-images.githubusercontent.com/48255327/163014392-b97fdc06-f5b3-4187-872c-c9319dd12f8d.png)
 
 ## Screen Recording
-Link to Screencast. Script can be found in script.md
+Link to Screencast. Script can be found [here](https://github.com/KwabenaNyinaku/nd00333-capstone/blob/master/starter_file/script.md).
