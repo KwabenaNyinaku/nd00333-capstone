@@ -56,11 +56,17 @@ An AutoML run was initaited with early stopping enabled, timeout minutes of fift
 After the experiment time had elapsed, a Voting Ensemble model registered the best accuracy of 95.4%. The column 'PPE' topped as a most important feature,
 with 'spread1' and 'spread2' being the second and third respectively.
 
+##
+![feature_importance](https://user-images.githubusercontent.com/48255327/163023319-faddb933-3e19-4c8c-8baa-5f15d17b3623.png)
+
 ## 
 Screenshots from the AutoML run:
 ![automl_run-details2](https://user-images.githubusercontent.com/48255327/163006808-15028d43-1523-4155-88e5-791dda8ac771.png)
 ![automl_model-run_id](https://user-images.githubusercontent.com/48255327/163006818-bd9d960a-59b7-4c35-b4bd-7f7f55ee597a.png)
 ![automl_run-details](https://user-images.githubusercontent.com/48255327/163006823-59827579-d8a8-4d18-9a0f-cf8f420e23fc.png)
+##
+Screeshot of Confusion Matrix:
+![confusion_matrix](https://user-images.githubusercontent.com/48255327/163023130-c3e799e3-42b6-4318-8393-9c62fb0e4321.png)
 
 
 ## Hyperparameter Tuning
