@@ -1,11 +1,10 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
+# Detecting Parkinson’s Disease
 
-# Your Project Title Here
-
-*TODO:* Write a short introduction to your project.
+Parkinson's disease is a long-term degenerative disorder of the central nervous system that mainly affects the motor system. It’s effects on the central nervous
+system are both chronic (meaning they persist) and progressive (meaning the symptoms grow worse over time), so a model is created to detect the prescence of the disease for individuals to seek treatment from physicians.
 
 ## Project Set Up and Installation
-*OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
+In this experiment, models were built using the python libraries scikit-learn, numpy, pandas, and xgboost, which can be found in myenv.yml file. 
 
 ## Dataset
 
