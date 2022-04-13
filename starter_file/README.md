@@ -62,6 +62,7 @@ Screenshots from the AutoML run:
 ![automl_model-run_id](https://user-images.githubusercontent.com/48255327/163006818-bd9d960a-59b7-4c35-b4bd-7f7f55ee597a.png)
 ![automl_run-details](https://user-images.githubusercontent.com/48255327/163006823-59827579-d8a8-4d18-9a0f-cf8f420e23fc.png)
 ##
+From the confusion matrix, we can conclude that the model only made 9 false predictions and 186 true predictions. 
 Screeshot of Confusion Matrix:
 ![confusion_matrix](https://user-images.githubusercontent.com/48255327/163023130-c3e799e3-42b6-4318-8393-9c62fb0e4321.png)
 
@@ -88,7 +89,7 @@ Screenshot of the best model with its run id:
 
 ## Model Deployment
 The AutoMl model is selected for deployment after comparisons show it proved the better. The deployment is carried out with the help of the ACI
-(Azure Container Instance). A request is then made to the endpoint, after the endpoint is deleted.
+(Azure Container Instance). A sample request is then sent to the endpoint, and a response is received. The endpoint will be deleted to conclude the experiment.
 
 ##
 Screenshots of model deployment and Testing Endpoint:
@@ -100,7 +101,10 @@ Screenshots of model deployment and Testing Endpoint:
 ![service_active](https://user-images.githubusercontent.com/48255327/163014185-62eac386-236a-4367-a8ec-26c85f72e56e.png)
 
 ##
+Sample request to endpoint and response:
 ![test_endpoints (2)](https://user-images.githubusercontent.com/48255327/163177858-24bed140-6deb-4a47-907b-30daee956db4.png)
+##
+Screenshot of service deletion:
 ![service-delete](https://user-images.githubusercontent.com/48255327/163014392-b97fdc06-f5b3-4187-872c-c9319dd12f8d.png)
 
 ## Screen Recording
