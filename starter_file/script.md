@@ -1,1 +1,9 @@
-
+For this project, i uploaded the parkinson's [dataset](https://archive.ics.uci.edu/ml/machine-learning-databases/parkinsons/), explored and studied it characteristics. A compute is created and used to access
+a jupyter notebook. In the Hyperparameter_Tuning notebook, all libraries needed are imported, a workspace
+is created and an experiment container is created for the project. The hyperdrive's parameters are indicated, showing the parameter sampler, hyperparameters, script run configuration and the hyperdrive 
+configuration. The hyperdrive experiment is then run and completed, displaying the a couple of runs and their 
+corresponding primary metric, and hyperparameters. I then print out the best run from the experiment having an accuracy of 0.8909 and its hyperparameters. The best run is registered to the model name 'hyperdrive_model'. Another jupyter notebook is created to launch an automl experiment, in order to train a
+new model and compare both results. In this notebook, all libraries are imported and experiment folder is created. The required dataset is imported from the workspace for use. Automl settings and configuration are 
+set up, and the run is initiated. With the run completed, the metric for each pipeline is diplayed and the 
+best selected for model deployment. The model is registered is deployed with the help of the azure container instance since it had an accuracy of 95%, with comparison measured higher than that of the hyperdrive model.
+The service is successfully created and in the state 'Healthy'. The service details are put on display, indicating the model used, its Swagger URI, and details on the application insights. Both models are now shown to be registered, and metrics for the deployed model and hyperdrive model are displayed to help with easy comparison. A sample request is sent to the endpoint and predicts '1' which indicates that presence of 
