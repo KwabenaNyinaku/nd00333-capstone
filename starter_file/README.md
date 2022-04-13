@@ -107,12 +107,14 @@ The AutoMl model is selected for deployment after comparisons show it proved the
 (Azure Container Instance). A sample request is then sent to the endpoint, and a response is received. The endpoint will be deleted to conclude the experiment.
 
 ##
-Screenshots of model deployment and Testing Endpoint:
+Screenshot of the best models from both the Hyperdrive and AutoML experiments:
 ![both_models](https://user-images.githubusercontent.com/48255327/163013586-88daf814-6a7c-463b-91fb-eb2354ca17ad.png)
+## 
+Screenshot that shows the creation of the endpoint:
 ![service-created](https://user-images.githubusercontent.com/48255327/163013900-6eda2b3c-f867-46ad-9824-8aebf53be17a.png)
 
 ##
-![service_created](https://user-images.githubusercontent.com/48255327/163014003-985c5c74-91f2-4f04-a126-0257d12062e2.png)
+Screenshot indicating that the endpoint is active:
 ![service_active](https://user-images.githubusercontent.com/48255327/163014185-62eac386-236a-4367-a8ec-26c85f72e56e.png)
 
 ##
@@ -124,3 +126,6 @@ Screenshot of service deletion:
 
 ## Screen Recording
 [Link to Screencast](https://www.youtube.com/watch?v=2YEfKqpe0A4). Script can be found [here](https://github.com/KwabenaNyinaku/nd00333-capstone/blob/master/starter_file/script.md).
+
+## Future Improvement
+An improvement can be made to the experiment when the model is converted to ONNX format. This would allow to interchange the model between various ML frameworks and tools. Also, to prevent overfitting in this scenario, practices such as using more data, using fewer features, cross-validation and regularization and hyperparameter optimization should be considered. In the case of the Hyperdrive experiment, different parameter samplers such as grid and bayesian sampler can be used as well as a different algorithm preferably xgboost classifier.
