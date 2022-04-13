@@ -3,7 +3,7 @@
 Parkinson's disease is a long-term degenerative disorder of the central nervous system that mainly affects the motor system. Its effects on the central nervous system are both chronic (meaning they persist) and progressive (meaning the symptoms grow worse over time), so a model is created to detect the presence of the disease for individuals to seek treatment from physicians.
 
 ## Project Set-Up and Installation
-Microsoft's Azure ML is the platform used in solving the underlying problem. In this experiment, models were built using the python libraries, sci-kit-learn, NumPy, pandas, and xgboost, with other environment details included in the myenv.yml file.
+Microsoft's Azure ML is the platform used in solving the underlying problem. In this experiment, models were built using the python libraries, sci-kit-learn, NumPy, pandas, and xgboost, with other environment details included in the [myenv.yml](https://github.com/KwabenaNyinaku/nd00333-capstone/blob/master/starter_file/myenv.yml) file.
 ## 
 ![workflow](https://user-images.githubusercontent.com/48255327/163184301-1e1abfd9-d5ed-41a4-a0ff-c51ecca6d5d9.png)
 
