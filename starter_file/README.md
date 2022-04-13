@@ -118,7 +118,7 @@ Screenshot indicating that the endpoint is active:
 ![service_active](https://user-images.githubusercontent.com/48255327/163014185-62eac386-236a-4367-a8ec-26c85f72e56e.png)
 
 ##
-Sample request to endpoint and response:
+Sample request to the endpoint and its response:
 ![test_endpoints (2)](https://user-images.githubusercontent.com/48255327/163177858-24bed140-6deb-4a47-907b-30daee956db4.png)
 ##
 Screenshot of service deletion:
