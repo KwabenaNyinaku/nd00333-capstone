@@ -96,7 +96,7 @@ Screenshots of model deployment and Testing Endpoint:
 ![service-created](https://user-images.githubusercontent.com/48255327/163013900-6eda2b3c-f867-46ad-9824-8aebf53be17a.png)
 ![service_created](https://user-images.githubusercontent.com/48255327/163014003-985c5c74-91f2-4f04-a126-0257d12062e2.png)
 ![service_active](https://user-images.githubusercontent.com/48255327/163014185-62eac386-236a-4367-a8ec-26c85f72e56e.png)
-![test_endpoints (2)](https://user-images.githubusercontent.com/48255327/163014351-31ea61a1-3861-40b3-ba0b-b6403f54c653.png)
+![test_endpoints (2)](https://user-images.githubusercontent.com/48255327/163177858-24bed140-6deb-4a47-907b-30daee956db4.png)
 ![service-delete](https://user-images.githubusercontent.com/48255327/163014392-b97fdc06-f5b3-4187-872c-c9319dd12f8d.png)
 
 ## Screen Recording
